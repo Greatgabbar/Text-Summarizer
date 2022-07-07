@@ -97,7 +97,7 @@ def generate_summary(file_name, top_n=5):
 @app.route('/', methods=['GET'])
 def ping():
     if(request.method == 'GET'):
-        data = generate_summary("text.txt", 2)
+        data = "Pong"
         return jsonify({'data': data})
 
 
