@@ -10,9 +10,10 @@ app = Flask(__name__)
 
 
 def read_article(file_name):
-    file = open(file_name, "r")
-    filedata = file.readlines()
-    article = filedata[0].split(". ")
+    # file = open(file_name, "r")
+    # filedata = file.readlines()
+    # article = filedata[0].split(". ")
+    article = file_name.split(". ")
     article = [i.lstrip() for i in article]
     print(article)
     sentences = []
