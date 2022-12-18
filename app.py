@@ -1,9 +1,11 @@
-from nltk.corpus import stopwords
-from nltk.cluster.util import cosine_distance
-import numpy as np
-import networkx as nx
-from flask import Flask, jsonify, request
 import json
+from flask import Flask, jsonify, request
+import networkx as nx
+import numpy as np
+from nltk.cluster.util import cosine_distance
+from nltk.corpus import stopwords
+import nltk
+nltk.download('stopwords')
 
 # creating a Flask app
 app = Flask(__name__)
